@@ -47,7 +47,7 @@ assets/                     logo, dark logo, screenshots
 server.json                 MCP Registry entry
 ```
 
-Build the ZIP from the repository root with `./scripts/package.sh` (files at the root of the archive, no `.git`).
+Build the ZIP with `./scripts/package.sh`: one `portal-imobiliario/` folder with the plugin files, no `.git`.
 
 ## Support
 
