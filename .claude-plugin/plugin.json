@@ -1,0 +1,10 @@
+{
+  "name": "portal-imobiliario",
+  "version": "1.0.0",
+  "description": "Search homes for sale and rent in Portugal, prices per m² (INE), favourites and alerts for new listings and price drops. Agencies can publish and manage listings.",
+  "author": { "name": "Portal Imobiliário", "email": "info@portalimobiliario.com.pt", "url": "https://portalimobiliario.com.pt" },
+  "homepage": "https://portalimobiliario.com.pt/profissionais/ia",
+  "repository": "https://github.com/shopwhizzy/portalimobiliario-mcp",
+  "license": "MIT",
+  "keywords": ["real estate", "portugal", "imoveis", "alerts"]
+}
