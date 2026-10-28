@@ -4,7 +4,7 @@ Connect [Portal Imobiliário](https://portalimobiliario.com.pt), the free real e
 
 - **MCP server:** `https://portalimobiliario.com.pt/mcp` (Streamable HTTP)
 - **Sign-in:** OAuth 2.1 with PKCE, dynamic client registration and client ID metadata documents. Discovery at `/.well-known/oauth-protected-resource` and `/.well-known/oauth-authorization-server`.
-- **Account:** free, created on the first sign-in (email link, password or Google).
+- **Account:** created on the first sign-in (email link, password or Google).
 
 ## What it does
 

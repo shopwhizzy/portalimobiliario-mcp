@@ -3,20 +3,33 @@
   "name": "portal-imobiliario",
   "version": "1.0.0",
   "description": "Search homes for sale and rent in Portugal, compare prices per m² with official INE data, and get alerts for new listings and price drops. Agencies can publish and manage their listings.",
-  "author": { "name": "Portal Imobiliário", "email": "info@portalimobiliario.com.pt", "url": "https://portalimobiliario.com.pt" },
+  "author": {
+    "name": "Portal Imobiliário",
+    "email": "info@portalimobiliario.com.pt",
+    "url": "https://portalimobiliario.com.pt"
+  },
   "homepage": "https://portalimobiliario.com.pt/profissionais/ia",
   "repository": "https://github.com/shopwhizzy/portalimobiliario-mcp",
   "license": "MIT",
-  "keywords": ["real estate", "portugal", "imóveis", "casas", "housing", "rent", "price per m2", "alerts"],
+  "keywords": [
+    "real estate",
+    "portugal",
+    "imóveis",
+    "casas",
+    "housing",
+    "rent",
+    "price per m2",
+    "alerts"
+  ],
   "extensions": {
     "com.openai": {
       "onboardingSkill": "./skills/get-started/SKILL.md",
       "interface": {
         "displayName": "Portal Imobiliário",
         "shortDescription": "Homes for sale & rent in PT",
-        "longDescription": "Portal Imobiliário is a free real estate portal for Portugal, with listings from agencies and private owners across the whole country.\n\nWith this app you can:\n- Search homes for sale and for rent with filters: area (district, municipality or parish), property type, price, size, bedrooms, features such as pool or garage, condition and new developments.\n- Find opportunities: every listing shows its asking price per m² against the market value of its municipality (official INE data), so you can ask for listings below market value.\n- Check prices per m² for any area of Portugal: official sale and rent prices (INE), yearly change, bank valuations and the asking prices on the portal.\n- Open a listing to see the full description, photos, areas, energy class and advertiser, with the link to the page on the portal.\n- Save favourites and create alerts: you are notified by email, in your account and here when a new listing matches your search or a listing drops its price.\n- Use the portal's calculators: property transfer tax (IMT), mortgage and capital gains simulators, and a home value estimate.\n\nFor agencies and owners, the same connection lets you publish and update listings, import files, manage photos, read and answer enquiries, follow statistics and manage the agency page and website.\n\nSign-in is required (email link, password or Google). Searches made through the assistant are never linked to your account: the portal only keeps aggregated daily counts of tool use. Advertisers' contact details are never shared with the assistant.",
+        "longDescription": "Portal Imobiliário is a real estate portal for Portugal, with listings from agencies and private owners across the whole country.\n\nWith this app you can:\n- Search homes for sale and for rent with filters: area (district, municipality or parish), property type, price, size, bedrooms, features such as pool or garage, condition and new developments.\n- Find opportunities: every listing shows its asking price per m² against the market value of its municipality (official INE data), so you can ask for listings below market value.\n- Check prices per m² for any area of Portugal: official sale and rent prices (INE), yearly change, bank valuations and the asking prices on the portal.\n- Open a listing to see the full description, photos, areas, energy class and advertiser, with the link to the page on the portal.\n- Save favourites and create alerts: you are notified by email, in your account and here when a new listing matches your search or a listing drops its price.\n- Use the portal's calculators: property transfer tax (IMT), mortgage and capital gains simulators, and a home value estimate.\n\nFor agencies and owners, the same connection lets you publish and update listings, import files, manage photos, read and answer enquiries, follow statistics and manage the agency page and website.\n\nSign-in with a Portal Imobiliário account is required (email link, password or Google). Searches made through the assistant are never linked to your account: the portal only keeps aggregated daily counts of tool use. Advertisers' contact details are never shared with the assistant.",
         "developerName": "Portal Imobiliário",
-        "category": "Lifestyle",
+        "category": "Business & Operations",
         "capabilities": [
           "Search homes for sale and rent in Portugal",
           "Compare asking prices with official INE market value",
@@ -41,7 +54,11 @@
         "composerIconDark": "./assets/logo-dark.png",
         "logo": "./assets/logo.png",
         "logoDark": "./assets/logo-dark.png",
-        "screenshots": ["./assets/screenshot-search.png", "./assets/screenshot-prices.png", "./assets/screenshot-alerts.png"]
+        "screenshots": [
+          "./assets/screenshot-search.png",
+          "./assets/screenshot-prices.png",
+          "./assets/screenshot-alerts.png"
+        ]
       },
       "review": {
         "test_cases": {
@@ -99,7 +116,7 @@
         "translations": {
           "pt-PT": {
             "subtitle": "Casas à venda e arrendar",
-            "description": "O Portal Imobiliário é um portal de imóveis gratuito para Portugal, com anúncios de agências e particulares em todo o país.\n\nCom esta app pode:\n- Pesquisar casas à venda e para arrendar com filtros: zona (distrito, concelho ou freguesia), tipo de imóvel, preço, área, tipologia, características como piscina ou garagem, estado e obra nova.\n- Encontrar oportunidades: cada anúncio mostra o preço pedido por m² face ao valor de mercado do concelho (dados oficiais do INE).\n- Ver o preço por m² de qualquer zona de Portugal: vendas e rendas oficiais (INE), variação anual, avaliação bancária e preços pedidos no portal.\n- Abrir um anúncio com a descrição, fotos, áreas, classe energética e anunciante, e o link para a página no portal.\n- Guardar favoritos e criar alertas: é avisado por email, na conta e aqui quando surge um imóvel novo ou um baixa de preço.\n- Usar os simuladores de IMT, crédito habitação e mais-valias, e saber quanto vale uma casa.\n\nPara agências e anunciantes, a mesma ligação permite publicar e atualizar anúncios, importar ficheiros, gerir fotos, responder a contactos, ver estatísticas e gerir a página e o site da agência.\n\nÉ preciso iniciar sessão (link por email, palavra-passe ou Google). As pesquisas feitas pelo assistente não ficam associadas à conta: o portal guarda apenas contagens diárias agregadas. Os contactos dos anunciantes nunca são dados ao assistente."
+            "description": "O Portal Imobiliário é um portal de imóveis para Portugal, com anúncios de agências e particulares em todo o país.\n\nCom esta app pode:\n- Pesquisar casas à venda e para arrendar com filtros: zona (distrito, concelho ou freguesia), tipo de imóvel, preço, área, tipologia, características como piscina ou garagem, estado e obra nova.\n- Encontrar oportunidades: cada anúncio mostra o preço pedido por m² face ao valor de mercado do concelho (dados oficiais do INE).\n- Ver o preço por m² de qualquer zona de Portugal: vendas e rendas oficiais (INE), variação anual, avaliação bancária e preços pedidos no portal.\n- Abrir um anúncio com a descrição, fotos, áreas, classe energética e anunciante, e o link para a página no portal.\n- Guardar favoritos e criar alertas: é avisado por email, na conta e aqui quando surge um imóvel novo ou um baixa de preço.\n- Usar os simuladores de IMT, crédito habitação e mais-valias, e saber quanto vale uma casa.\n\nPara agências e anunciantes, a mesma ligação permite publicar e atualizar anúncios, importar ficheiros, gerir fotos, responder a contactos, ver estatísticas e gerir a página e o site da agência.\n\nÉ preciso iniciar sessão com uma conta do Portal Imobiliário (link por email, palavra-passe ou Google). As pesquisas feitas pelo assistente não ficam associadas à conta: o portal guarda apenas contagens diárias agregadas. Os contactos dos anunciantes nunca são dados ao assistente."
           }
         }
       }
