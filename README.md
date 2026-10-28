@@ -38,14 +38,14 @@ One connector; the tools shown depend on the account.
 This repository is the plugin package for the OpenAI plugin directory (Agent Plugins format) and a Claude Code plugin:
 
 ```
-plugin.json                 portable manifest + extensions.com.openai (listing, review cases, publication)
-mcp.json                    remote MCP server for Agent Plugins (OAuth, CIMD with DCR fallback)
-.claude-plugin/plugin.json  Claude Code plugin manifest
-.mcp.json                   Claude Code MCP server
-skills/                     get-started (onboarding) and find-a-home
-assets/                     logo, dark logo, screenshots
-server.json                 MCP Registry entry
+plugin.json                        OpenAI (Agent Plugins) manifest + extensions.com.openai (listing, review cases, publication)
+mcp.json                           remote MCP server for Agent Plugins (OAuth, CIMD with DCR fallback)
+assets/                            logo, dark logo, screenshots (OpenAI listing)
+claude/                            the Claude plugin: .claude-plugin/plugin.json, .mcp.json, skills/, README, LICENSE
+server.json                        MCP Registry entry
 ```
+
+The skills live in `claude/skills/` and are copied into the OpenAI ZIP by `scripts/package.sh`.
 
 Build the ZIP with `./scripts/package.sh`: one `portal-imobiliario/` folder with the plugin files, no `.git`.
 

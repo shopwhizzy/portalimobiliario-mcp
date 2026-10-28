@@ -4,7 +4,7 @@ set -e
 cd "$(dirname "$0")/.."
 V=$(python3 -c "import json;print(json.load(open('plugin.json'))['version'])")
 T=$(mktemp -d); mkdir "$T/portal-imobiliario"
-cp -r plugin.json mcp.json skills assets LICENSE "$T/portal-imobiliario/"
+cp -r plugin.json mcp.json assets LICENSE "$T/portal-imobiliario/" && cp -r claude/skills "$T/portal-imobiliario/skills"
 mkdir -p dist && rm -f "dist/portal-imobiliario-$V.zip"
 (cd "$T" && zip -qr "$OLDPWD/dist/portal-imobiliario-$V.zip" portal-imobiliario)
 rm -rf "$T"
