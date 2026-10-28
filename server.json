@@ -3,7 +3,7 @@
   "name": "io.github.shopwhizzy/portalimobiliario-mcp",
   "title": "Portal Imobiliário",
   "description": "Homes for sale and rent in Portugal: search, prices per m² (INE), alerts, and listing management.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://portalimobiliario.com.pt/profissionais/ia",
   "repository": { "url": "https://github.com/shopwhizzy/portalimobiliario-mcp", "source": "github" },
   "remotes": [{ "type": "streamable-http", "url": "https://portalimobiliario.com.pt/mcp" }]

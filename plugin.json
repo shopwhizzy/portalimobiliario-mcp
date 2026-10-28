@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "portal-imobiliario",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search homes for sale and rent in Portugal, compare prices per m² with official INE data, and get alerts for new listings and price drops. Agencies can publish and manage their listings.",
   "author": {
     "name": "Portal Imobiliário",
@@ -113,7 +113,7 @@
         "commerce": false
       },
       "publication": {
-        "release_notes": "First public version: property search, listing details, prices per m², favourites, alerts, calculators and listing management for agencies.",
+        "release_notes": "First public version: property search, listing details, prices per m², favourites, alerts, calculators and listing management for agencies, with one tool per operation.",
         "translations": {
           "pt-PT": {
             "subtitle": "Casas à venda e arrendar",

@@ -1,7 +1,7 @@
 {
   "name": "portal-imobiliario",
   "displayName": "Portal Imobiliário",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search homes for sale and rent in Portugal, prices per m² (INE), favourites and alerts for new listings and price drops. Agencies can publish and manage listings.",
   "author": {
     "name": "Portal Imobiliário",

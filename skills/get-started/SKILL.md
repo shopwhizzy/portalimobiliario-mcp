@@ -14,7 +14,7 @@ Portal Imobiliário (https://portalimobiliario.com.pt) is a free real estate por
    - prices per m² of an area: `area_prices`;
    - a listing: `get_listing`;
    - alerts for new listings and price drops: `create_alert`, then `alert_updates`;
-   - favourites: `favorites`;
+   - favourites: `list_favorites`, `add_favorite`, `remove_favorite`;
    - calculators: `simulate_imt`, `simulate_mortgage`, `simulate_capital_gains`, `estimate_value`.
 4. Always share the `url` returned by the tools: it opens the same search or page on the portal.
 5. Advertisers' contact details are not available through the app. To contact an advertiser or book a visit, the person uses the form on the listing page.

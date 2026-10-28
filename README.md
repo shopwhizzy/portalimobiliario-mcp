@@ -17,13 +17,13 @@ One connector; the tools shown depend on the account.
 | `search_properties` | Search listings for sale or rent: place, type, price, area, bedrooms, features, condition, new builds, price against market value |
 | `get_listing` | One listing: price, €/m², market comparison, areas, features, description, photos, advertiser |
 | `area_prices` | Price per m² of a district, municipality or parish: INE sales and rents, yearly change, bank valuation, portal asking prices |
-| `favorites` | List, add or remove favourites (the same as on the site) |
+| `list_favorites`, `add_favorite`, `remove_favorite` | Favourites (the same as on the site) |
 | `create_alert`, `list_alerts`, `update_alert`, `delete_alert` | Saved searches with alerts for new listings and price drops (email, account notice and in the assistant) |
 | `alert_updates` | What the alerts found and was not seen yet |
 | `search`, `fetch` | Free-text search and full listing text (ChatGPT connectors and deep research) |
 | `simulate_imt`, `simulate_mortgage`, `simulate_capital_gains`, `estimate_value`, `official_prices`, `market_stats`, `find_location`, `whoami` | Calculators and official data |
 
-**Agencies and owners** also get listing tools: `create_property`, `update_property`, `import_properties`, `import_csv`, `manage_feeds`, `manage_photos`, `audit_listings`, `manage_leads`, `manage_agency`, `manage_agents`, `agency_reviews`, `manage_developments`, reports and exports. See [docs/TOOLS.md](docs/TOOLS.md).
+**Agencies and owners** also get listing tools, one per operation: listings (`create_property`, `update_property`, `import_properties`, `import_csv`, `set_status`, `delete_property`), photos (`add_photos`, `list_photos`, `delete_photos`, `reorder_photos`, `set_cover_photo`), CRM feeds (`list_feeds`, `test_feed`, `add_feed`, `run_feed`, `toggle_feed`, `delete_feed`), enquiries (`list_leads`, `mark_leads_read`, `archive_leads`), the agency page (`get_agency`, `update_agency`, `list_agents`, `add_agent`, `list_agency_reviews`, `reply_to_review`), new developments (`list_developments`, `get_development`, `create_development`, `update_development`, `link_development_units`, `unlink_development_units`, `delete_development`), reports and exports. See [docs/TOOLS.md](docs/TOOLS.md).
 
 ## Privacy
 
