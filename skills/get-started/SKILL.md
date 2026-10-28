@@ -7,7 +7,7 @@ description: First use of Portal Imobiliário - sign in, then what the person ca
 
 Portal Imobiliário (https://portalimobiliario.com.pt) is a free real estate portal for Portugal.
 
-1. The first call asks the person to sign in on portalimobiliario.com.pt (email link, password or Google). A new account is created on the first sign-in, free.
+1. The first call asks the person to sign in on portalimobiliario.com.pt (email link, password or Google). A new account is created on the first sign-in.
 2. After sign-in, call `whoami` once to learn the account: a person looking for a home sees search, prices and alerts tools; an agency or owner also sees the listing tools.
 3. Offer what fits, in the person's language (Portuguese from Portugal by default):
    - search homes: `search_properties` (place, type, price, bedrooms, features, `mercado: ["abaixo"]` for below market value);
