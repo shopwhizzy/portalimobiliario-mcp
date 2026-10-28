@@ -169,10 +169,10 @@ Lê o endereço de um feed XML ou CSV (Kyero, eGO, Casafari, Zome...) e mostra q
 
 ### `add_feed` - Ligar um feed
 
-Liga o feed do programa de gestão a uma agência e faz já a primeira importação; depois sincroniza todos os dias (novos entram, alterados atualizam, os que saem do feed são retirados após duas sincronizações). Máximo 5 feeds por agência e 3000 imóveis por feed. Testa primeiro com test_feed.
+Liga o feed do programa de gestão a uma agência e faz já a primeira importação (os anúncios da agência importados do Imovirtual são substituídos pelos do feed); depois sincroniza todos os dias (novos entram, alterados atualizam, os que saem do feed são retirados após duas sincronizações). Máximo 5 feeds por agência e 3000 imóveis por feed. Testa primeiro com test_feed.
 
 - Arguments: `url`, `agency_id`
-- Hints: readOnlyHint: false, destructiveHint: false, openWorldHint: true
+- Hints: readOnlyHint: false, destructiveHint: true, openWorldHint: true
 
 ### `run_feed` - Sincronizar um feed agora
 
@@ -214,7 +214,7 @@ Detalhe completo de um imóvel (por id, ref PIxxxxx ou external_ref).
 Cria um anúncio. Por omissão fica publicado (status active) se tiver localização e preço; usa status='draft' para rascunho.
 
 - Arguments: `property`, `agency_id`, `create_agents`
-- Hints: readOnlyHint: false, destructiveHint: false, openWorldHint: true
+- Hints: readOnlyHint: false, destructiveHint: true, openWorldHint: true
 
 ### `update_property` - Alterar anúncio
 
@@ -235,7 +235,7 @@ Importa vários imóveis de uma vez (até 500 por chamada) a partir de dados est
 Importa um CSV (texto ou URL público). Deteta colunas em PT/EN automaticamente (ou usa 'mapping': {coluna: campo}). dry_run=true (por omissão) mostra a correspondência e a validação sem gravar; repete com dry_run=false para importar.
 
 - Arguments: `csv_text`, `csv_url`, `mapping`, `agency_id`, `dry_run`, `publish`, `agent_id`, `create_agents`
-- Hints: readOnlyHint: false, destructiveHint: false, openWorldHint: true
+- Hints: readOnlyHint: false, destructiveHint: true, openWorldHint: true
 
 ### `set_status` - Mudar estado (vendido, reservado...)
 
@@ -291,7 +291,7 @@ Lista os agentes de uma agência (agency_id), com o número de anúncios ativos 
 Acrescenta um agente a uma agência (agency_id): nome, email, telefone e cargo.
 
 - Arguments: `agency_id`, `name`, `email`, `phone`, `title`
-- Hints: readOnlyHint: false, destructiveHint: false, openWorldHint: false
+- Hints: readOnlyHint: false, destructiveHint: false, openWorldHint: true
 
 ### `list_developments` - Os meus empreendimentos
 
@@ -312,14 +312,14 @@ Detalhe de um empreendimento (id) com as frações ligadas.
 Cria um empreendimento (obra nova) de uma agência; as frações são anúncios normais que depois se ligam com link_development_units. Localização por nomes (distrito, concelho, freguesia).
 
 - Arguments: `agency_id`, `data`
-- Hints: readOnlyHint: false, destructiveHint: false, openWorldHint: false
+- Hints: readOnlyHint: false, destructiveHint: false, openWorldHint: true
 
 ### `update_development` - Alterar empreendimento
 
 Altera os campos de um empreendimento (id, data com os campos a mudar).
 
 - Arguments: `id`, `data`
-- Hints: readOnlyHint: false, destructiveHint: true, openWorldHint: false
+- Hints: readOnlyHint: false, destructiveHint: true, openWorldHint: true
 
 ### `link_development_units` - Ligar frações
 
@@ -410,7 +410,7 @@ Mostra a página da agência: dados, números dos últimos 30 dias (telefone vis
 Altera dados públicos da página da agência: nome, designação da empresa, AMI, descrição (só texto, sem contactos nem links), morada, telefone, WhatsApp, email ou site. Substitui os valores atuais: confirma com o utilizador antes.
 
 - Arguments: `agency_id`, `changes`
-- Hints: readOnlyHint: false, destructiveHint: true, openWorldHint: false
+- Hints: readOnlyHint: false, destructiveHint: true, openWorldHint: true
 
 ### `list_agency_reviews` - Avaliações da agência
 
